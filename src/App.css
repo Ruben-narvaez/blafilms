@@ -26,6 +26,10 @@ button {
   grid-template-columns: 25% 40% 10% 25%;
 }
 
+.introduce-title {
+  text-align: center;
+}
+
 .search-results {
   text-align: center;
   display: grid;

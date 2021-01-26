@@ -24,7 +24,7 @@ function App() {
     e.preventDefault()
     setSearchBoxSubmit(searchBoxTemporal)
     setCurrentPage(1)
-
+    e.target.reset()
   }
   
   useEffect(() => {
@@ -50,7 +50,7 @@ function App() {
         <button type="submit">Search</button>
       </form>
       {!searchResult || searchResult.Search === undefined ? (
-        <p>No results yet</p>
+        <h5 className="introduce-title">Write a movie title (or a word...) on the search bar</h5>
       ) : (
         <div className="search-results">
           <div className="chevron">
